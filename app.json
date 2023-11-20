@@ -15,16 +15,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "easypass.mobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "easypass.mobile"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "ssl": {
+        "key": "./node_modules/expo-secure-store/ssl/server.key",
+        "cert": "./node_modules/expo-secure-store/ssl/server.crt"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a006731e-fa59-463e-9089-9ea603e11e63"
+      }
+    },
+    "runtimeVersion": "sdk-42.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/a006731e-fa59-463e-9089-9ea603e11e63"
     }
   }
 }
