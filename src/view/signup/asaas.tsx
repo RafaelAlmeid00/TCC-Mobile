@@ -4,10 +4,10 @@ import { useContext, useEffect, useState } from 'react';
 import styles from '../../styles';
 import { PaperSelect } from 'react-native-paper-select';
 import ButtonComp from '../../components/button';
-import { createCustomer, handleGetListCpf, handleSend } from '../../controllers/asaascontroller';
+import { createCustomer, handleGetListCpf, handleSend } from '../../controllers/signup/asaascontroller';
 import { interfaceUserData } from '../../interfaces/userInterface';
 import { SignUpContext, UserContext } from '../../store/context/context';
-import useNavigate from '../../controllers/navigatecontroller';
+import useNavigate from '../../controllers/user/navigatecontroller';
 
 export default function AsaasController() {
   const { signUpContext } = useContext(SignUpContext);

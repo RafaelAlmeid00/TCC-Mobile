@@ -4,7 +4,7 @@ import { PasswordController, areAllTrue } from "./passwordcontroller";
 import { ValidateCPF } from "./validateCPFcontroller";
 import { handleSubmitData, validateDate } from "./validateDate";
 import { VerifyCPF } from "./verifyCPFexist";
-import { SignUpContext } from "../store/context/context";
+import { SignUpContext } from "../../store/context/context";
 
 export const handleInputChange = async (
     value: any,

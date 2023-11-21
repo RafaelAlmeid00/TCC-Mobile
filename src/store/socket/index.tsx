@@ -1,5 +1,5 @@
 import { io, Socket } from "socket.io-client";
-import getToken from "../../controllers/tokencontroller";
+import getToken from "../../controllers/token/tokencontroller";
 
 interface CustomSocket extends Socket {
     auth: {

@@ -4,8 +4,8 @@ import styles from '../../styles';
 import wave from '../../styles/home/wave';
 import logo from '../../styles/home/logo';
 import FadeInView from '../../components/animated/fadein';
-import useFadeInAnimation from '../../controllers/fadeincontroller';
-import { ConnectionSocket } from '../../controllers/socketcontroller';
+import useFadeInAnimation from '../../controllers/configs/fadeincontroller';
+import { ConnectionSocket } from '../../controllers/token/socketcontroller';
 import { UserContext } from '../../store/context/context';
 
 export default function HomeController({ funVerify }) {

@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import { socket } from "../store/socket";
+import { socket } from "../../store/socket";
 import getToken from "./tokencontroller";
-import { interfaceUserData } from "../interfaces/userInterface";
+import { interfaceUserData } from "../../interfaces/userInterface";
 import { jwtDecode } from 'jwt-decode'
 
 interface Connect {

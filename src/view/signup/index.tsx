@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import styles from '../../styles';
 import InputComp from '../../components/input';
 import ButtonComp from '../../components/button';
-import useNavigate from '../../controllers/navigatecontroller';
+import useNavigate from '../../controllers/user/navigatecontroller';
 import {
     handleInputChange,
     handleContinue,
@@ -13,13 +13,13 @@ import {
     handleFieldNine,
     handleFieldFiveLocation,
     handleValidateCPF,
-} from '../../controllers/signupcontroller';
+} from '../../controllers/signup/signupcontroller';
 import { TextInput } from 'react-native-paper';
 import colors from '../../assets/colors';
 import HelperText from '../../components/text/helper';
 import SnackBar from '../../components/snackbar';
 import Progress from '../../components/progressbar';
-import { PasswordController, areAllTrue } from '../../controllers/passwordcontroller';
+import { PasswordController, areAllTrue } from '../../controllers/signup/passwordcontroller';
 import { SignUpContext } from '../../store/context/context';
 
 interface interfaceUserData {

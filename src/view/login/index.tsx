@@ -6,13 +6,13 @@ import { IconButton, TextInput } from 'react-native-paper';
 import { useState } from 'react';
 import colors from '../../assets/colors';
 import ButtonComp from '../../components/button';
-import useNavigate from '../../controllers/navigatecontroller';
+import useNavigate from '../../controllers/user/navigatecontroller';
 import Animated from '../../components/animated/animated';
 import InputComp from '../../components/input';
-import { handleLogin } from '../../controllers/logincontroller';
+import { handleLogin } from '../../controllers/login/logincontroller';
 import SnackBar from '../../components/snackbar';
 import { TitleEasyPass } from '../../components/text/title';
-import { authenticateWithBiometry, checkBiometryAvailability } from '../../controllers/authbiometriccontroller';
+import { authenticateWithBiometry, checkBiometryAvailability } from '../../controllers/login/authbiometriccontroller';
 
 export default function LoginController() {
     const [cpf, setCPF] = useState("");

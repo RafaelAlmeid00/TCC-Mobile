@@ -87,9 +87,17 @@ const styles = StyleSheet.create({
 
       textSubTitle: {
         color: 'black',
-        fontSize: hp('2%'),
-        textAlign: 'center'
-      }
+        fontSize: hp('2.2%'),
+        textAlign: 'center',
+      },
+
+      footer: {
+        position: 'relative',
+        left: 0,
+        right: 0,
+        padding: 20,
+        height: 'auto'
+      },
 
 });
 

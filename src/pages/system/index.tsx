@@ -4,14 +4,14 @@ import { View } from 'react-native';
 import { useContext, useEffect, useRef } from 'react';
 import { UserContext } from '../../store/context/context';
 import Loading from '../../view/loading';
-import { ConnectionSocket } from '../../controllers/socketcontroller';
+import { ConnectionSocket } from '../../controllers/token/socketcontroller';
 import { useRoute } from '@react-navigation/native';
 
 export default function System() {
   const { userContext, setUserContext, setToken } = useContext(UserContext);
   const route = useRoute();
   const { params } = route;
-  const { cpf } = params 
+  const { cpf }: any = params 
 
   useEffect(() => {
 

@@ -27,6 +27,7 @@ export default function Routes() {
                             screenOptions={{
                                 headerShown: false,
                             }}
+                            tabBar={() => null}
                             >
 
                             <Tab.Screen
